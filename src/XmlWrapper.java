@@ -14,6 +14,10 @@ public class XmlWrapper {
 
     private boolean onlyClosed = false;
 
+    public XmlWrapper() {
+
+    }
+
     public XmlWrapper(@NotNull String xml) throws NotValidXml {
         for (int i = 0; i < xml.length(); ++i) {
             processSymbol(xml.charAt(i));
